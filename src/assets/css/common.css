@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*样式重置*/
+b{
+	font-weight: normal;
+}
+body, h1, h2,h3,h4,h5,h6,p,dl,dd,ol,ul,form, input,textarea,th,td,select,button,pre { margin:0; padding:0;}
+em,i { font-style:normal;}
+li { list-style:none;}
+button{border: 0;background: none;}
+html,body{margin: 0 auto;height: 100%;position: relative;width: 100%;}
+/*浮动*/
+.ovfl { overflow: hidden}
+.clear:after { content:''; display:block; clear:both; }
+.clear { zoom:1; }
+.fl { float:left;}
+.fr { float:right;}
+
+
+a { text-decoration:none; cursor:pointer; }
+
+a:focus,button:focus {outline:none;}
+b{ font-weight:normal;}
+img { border:none; vertical-align:top;}
+input, textarea {vertical-align: middle;outline: none; border:none; background:none;box-sizing:content-box;}
+textarea { resize:none; overflow:auto; }
+table { border-spacing:0px; border:none; border-collapse:collapse;}
+body, input, select, button, textarea, pre{ font-size: 14px;font-family:"微软雅黑",tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;background:#fff;}
+html,body,a{color: #222;font-size: 16px;}
+
+/*颜色样式*/
+.red{
+	color: #fa592b;
+}
+.relative{
+	position: relative;
+}
+/*一像素*/
+.vue-1px-b,.vue-1px-r,.vue-1px,.vue-1px-t{
+	position: relative;
+}
+.vue-1px-b:before {      
+      content: " ";
+	  position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  width: 200%;
+	  border-bottom: 1px solid #dedede;
+	  color: #dedede;
+	  height: 1px;
+	  transform-origin: left top;
+	  transform: scale(0.5);
+  }
+.vue-1px-t:before {      
+      content: " ";
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 200%;
+	  border-top: 1px solid #dedede;
+	  color: #dedede;
+	  height: 1px;
+	  transform-origin: left top;
+	  transform: scale(0.5);
+  }
+.vue-1px-r:before {      
+      content: " ";
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  width: 1px;
+	  border-right: 1px solid #dedede;
+	  color: #dedede;
+	  height: 200%;
+	  transform-origin: left top;
+	  transform: scale(0.5);
+  }
+.vue-1px:before {      
+      content: " ";
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 200%;
+	  border: 1px solid #dedede;
+	  color: #dedede;
+	  height: 200%;
+	  transform-origin: left top;
+	  transform: scale(0.5);
+  }   
+
+/*遮罩层*/
+#shade{
+	width: 100%;height: 100%;position: absolute;left: 0;top: 0;
+	background: rgba(0,0,0,0.7);z-index: 999;
+}
+
