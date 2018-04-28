@@ -1,15 +1,16 @@
-插件测试   
+# xiemeng
+vue 轮播图插件
 
 如何使用    npm istall --save abbo-swiper
 
-import abbo from 'vue-abbo';
+import abbo from 'abbo-swiper';
 Vue.use(abbo)
 
 
  <abbo-swiper :options="swiperOption">
-	<abbo-slide><img src="./assets/imgs/license_01.png"></abbo-slide>
-	<abbo-slide><img src="./assets/imgs/license_02.png"></abbo-slide>
-	<abbo-slide><img src="./assets/imgs/license_03.png"></abbo-slide>
+	<abbo-slide><slot></slot></abbo-slide>
+	<abbo-slide><slot></slot></abbo-slide>
+	<abbo-slide><slot></slot></abbo-slide>
 </abbo-swiper>
 
 swiperOption:{
